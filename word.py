@@ -15,3 +15,5 @@ def test_word_frequency(line):
     dict = OrderedDict(sorted(dict.items()))
     for key, data in dict.items():
         print(f'{(key, data)}')
+
+    return dict
