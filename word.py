@@ -1,5 +1,3 @@
-from collections import OrderedDict
-
 # test word frequency in line
 def test_word_frequency(line):
     dict = {}
@@ -12,8 +10,7 @@ def test_word_frequency(line):
             data += 1
             dict.update({word: data})
 
-    dict = OrderedDict(sorted(dict.items()))
-    for key, data in dict.items():
+    for key, data in sorted(dict.items()):
         print(f'{(key, data)}')
 
     return dict
