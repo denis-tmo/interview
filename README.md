@@ -9,4 +9,4 @@ These three files are:
     2. circular.py: create a circular queue using dictionaries
     3. password.py: validate a user password to register, each password is a sequence of comma separated password read from the file data\password.txt
 
-The unitest is in tests.py which simply test one password.
+The unitest are in tests.py.

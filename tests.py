@@ -3,7 +3,7 @@ from word     import test_word_frequency
 from password import test_valid_password
 from circular import CircularQueue
 
-class TestPasswordMethods(unittest.TestCase):
+class TestMethods(unittest.TestCase):
 
     def test_word(self):
         dict = test_word_frequency('this is a unit test to test')
