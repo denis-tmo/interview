@@ -11,10 +11,14 @@ from password import test_valid_password
 if __name__ == "__main__":
 
     # 1. test word frequency
-    with open("data\word.txt","r") as data:
-        for line in data:
-            test_word_frequency(line)
-            print()
+    try:
+        with open("data\word.txt","r") as data:
+            for line in data:
+                test_word_frequency(line)
+                print()
+    except IOError as err:
+        print(f'error: {{err}}')
+        exit(1)
 
     # 2. test circular queue using dictionary, queue size is set to 3
     test_circular_queue(max_size = 3)
